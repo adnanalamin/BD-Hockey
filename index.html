@@ -11,9 +11,122 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- =================== Manrope Google Font ====================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==================== Link Font Awesome ======================= -->
+    <script
+      src="https://kit.fontawesome.com/e2d376de1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ======================= Custom Color====================== -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              button_color: "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- ============= Font Class ==================== -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
+  <body class="font-manrope">
+    <header class="container lg:w-9/12 mx-auto">
+      <nav class="">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-extrabold">Hockey’s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass mr-6 md:block sm:hidden"></i>
+            <a class="btn bg-button_color text-white">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- ======================= Start Banner Section===================== -->
+      <section class="mt-14">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/Images/1.png" class="w-full" />
+              <div class="absolute flex gap-x-4 transform -translate-y-1/2 left-1/3 bottom-0 md:left-5  md:bottom-5">
+                <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex gap-x-4 transform -translate-y-1/2 left-1/3 bottom-0 md:left-5  md:bottom-5">
+                <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+              <div class="absolute flex gap-x-4 transform -translate-y-1/2 left-1/3 bottom-0 md:left-5  md:bottom-5">
+                <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+              <div class="absolute flex gap-x-4 transform -translate-y-1/2 left-1/3 bottom-0 md:left-5  md:bottom-5">
+                <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
